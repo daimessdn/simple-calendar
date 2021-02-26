@@ -7,15 +7,19 @@
 	<link rel="stylesheet" href="src/css/main.css" />
 </head>
 <body>
-	<h1>calendar</h1>
+	<div id="top">
+		<h1>calendar</h1>
 
-	<form id="addCalendar">
-		<input type="text" name="event" placeholder="Enter an event..." />
-		<input type="date" name="date" />
-		<input type="time" name="time" />
-		<input type="text" name="description" placeholder="Enter the description..." />
-		<button type="submit" value="submit" >Add</button>
-	</form>
+		<form id="addCalendar">
+			<input type="text" name="event" placeholder="Enter an event..." />
+			<input type="date" name="date" />
+			<input type="time" name="time" />
+			<input type="text" name="description" placeholder="Enter the description..." />
+			<button type="submit" value="submit" >Add</button>
+		</form>
+
+		<p><strong>Double click</strong> the event name for view event description.</p>
+	</div>
 
 	<table></table>
 

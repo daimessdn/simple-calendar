@@ -16,15 +16,18 @@ const updateCalendar = () => {
   calendar.forEach((event) => {
     if (new Date(`${event.date} ${event.time}`) >= new Date()) {
       calendarOutput.innerHTML += `<tr id="${event.id}"" class="${
-                        new Date(event.date + ' ' + event.time) - new Date() <= 864e5 ? "current" : ""}
-                       ">
-                       <td title="${event.event}"
-                           ondblclick="this.children[1].style.display = this.children[1].style.display === 'none' ? 'block' : 'none'">
-                           ${event.event}<br />
-                           <span class="description" style="display: none">${event.description}<span>
-                       </td>
-                       <td>${event.date} ${event.time}</td>
-                       <td class="delete" onclick="deleteCalendar(this.parentElement.id)">delete</td></tr>`;
+                                    new Date(event.date + ' ' + event.time) - new Date() <= 864e5 ? "current" : ""}
+                                   ">
+                                     <td title="${event.event}"
+                                         ondblclick="
+                                           this.children[2].style.display = this.children[2].style.display === 'none' ? 'block' : 'none'"
+                                     >
+                                       <span class="event-name">${event.event}</span><br />
+                                       <span class="description" style="display: none">${event.description}<span>
+                                     </td>
+                                     <td>${event.date} ${event.time}</td>
+                                     <td class="delete" onclick="deleteCalendar(this.parentElement.id)">delete</td>
+                                   </tr>`;
     }
   });
 };
