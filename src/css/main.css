@@ -1,0 +1,24 @@
+body {
+	font-family: "Arial";
+}
+
+input, button {
+	height: 34px;
+}
+
+table {
+	margin-top: 5px;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.delete {
+	background-color: salmon;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	user-select: none;
+}
