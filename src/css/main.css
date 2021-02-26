@@ -1,9 +1,11 @@
 body {
 	font-family: "Arial";
+	font-size: 1em;
 }
 
 input, button {
 	height: 34px;
+	font-family: "Arial";
 }
 
 table {
@@ -11,8 +13,25 @@ table {
 }
 
 td, th {
+	cursor: default;
 	border: 1px solid black;
 	padding: 3px;
+}
+
+tr td:first-child {
+	width: 20em;
+	max-width: 20em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.current {
+	background-color: lightgreen;
+}
+
+.description {
+	white-space: normal;
 }
 
 .delete {
